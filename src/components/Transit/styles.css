@@ -1,0 +1,233 @@
+.ambulance_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(196, 196, 196, 0.67);
+}
+
+.ambulance_modal_content {
+  width: 100%;
+  max-width: 341px;
+  height: 228px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  background: #fff;
+  box-shadow: 42px 2px 64px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;  
+}
+
+.ambulance_img {
+  width: 82px;
+  height: 82px;
+}
+
+.ambulance_modal_content h2 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.67px;
+  color: #000000;
+  opacity: 0.8;  
+}
+
+.ambulance_btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.ambulance_btn {
+  width: 147px;
+  height: 42px;
+  border-radius: 32px;   
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none; 
+}
+
+.ambulance_btn.grey {
+  background: #E9E9E9;
+  color: #000000;
+  opacity: 0.5;    
+}
+
+.ambulance_btn.main {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.arrived {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../../assets/images/map.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrived_statusbar {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.arrived_map-marker {
+  position: absolute;
+  top: 32%;
+  right: 5px;
+  width: 217px;
+}
+
+.arrived_info {
+  width: 335px;
+  height: 72px;
+  background: #FFFEFE;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;  
+  padding: 16px;
+  margin-top: 70px;
+}
+
+.arrived_info_icon {
+  margin-right: 16px;
+}
+
+.arrived_info_text h2 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.67px;
+  color: #000000;
+  opacity: 0.8;
+  margin-bottom: 7px;
+}
+
+.arrived_info_text p {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #B3B2B2;  
+}
+
+.aid_manual {
+  margin-top: 20px;
+  transform: translateY(14%);
+  width: 100%;
+  height: auto;
+  padding: 2em 1em 1em 1em;
+  background: #fff;
+  box-shadow: 42px 2px 64px rgba(0, 0, 0, 0.15);
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  z-index: 700;
+  transition: all ease-in .3s;
+}
+
+.aid_manual.swipe {
+  margin-top: 20px;
+  transform: translateY(0);
+}
+
+.aid_manual_decor {
+  margin: 0 auto 1em auto;
+  width: 70px;
+  height: 5px;
+  background: #000000;
+  opacity: 0.1;
+  border-radius: 10px;    
+}
+
+.aid_manual h2, .aid_manual h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.67px;
+  color: #000000;
+  opacity: 0.8;  
+}
+
+.aid_manual p, .aid_manual p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.4;
+  margin-top: 10px;
+  margin-bottom: 26px; 
+}
+
+.aid_manual_btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+  margin-bottom: 24px;
+  padding: 0 1em;
+}
+
+.aid_manual_btn {
+  width: 147px;
+  height: 42px;
+  border-radius: 32px;   
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none; 
+}
+
+.aid_manual_btn svg {
+  margin-left: 5px;
+}
+
+.aid_manual_btn.grey {
+  background: #E9E9E9;
+  color: #000000;
+  opacity: 0.7;    
+}
+
+.aid_manual_btn.main {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.aid_manual_section h3 {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.aid_manual_section p {
+  text-align: left;
+}
+
+.aid_manual_img {
+  width: 100%;
+}

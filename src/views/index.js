@@ -1,0 +1,7 @@
+export { default as Home } from "./Home/Home"
+export { default as Hospitals } from "./Hospitals/Hospitals"
+export { default as QuestionOne } from "./Questions/QuestionOne"
+export { default as QuestionTwo } from "./Questions/QuestionTwo"
+export { default as AnalysingResults } from "./Questions/AnalysingResults"
+export { default as Transit } from "./Transit/Transit"
+export { default as Results } from "./Questions/Results"

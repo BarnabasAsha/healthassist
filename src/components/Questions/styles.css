@@ -1,0 +1,366 @@
+.questions_layout {
+  width: 100%;
+}
+
+.questions_layout_header {
+  width: 100%;
+  height: 44px;
+  z-index: 500;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.questions_layout_tabs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 52px;
+}
+
+.questions_layout_tabs span {
+  width: 40px;
+  height: 8px;
+  background: #E7E6E6;  
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.questions_layout_tabs span.active {
+  width: 81px;
+  height: 8px;
+  background: var(--crimson-color);  
+}
+
+.questions_layout_text {
+  padding: 1em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.questions_layout_text h2 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.67px;
+  color: #000000;
+  opacity: 0.8;  
+  margin-bottom: 16px;
+}
+
+.questions_layout_text p {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.5;  
+}
+
+.questions_layout_children {
+  width: 100%;
+  height: auto;
+  margin-bottom: 58px;
+}
+
+.questions_layout_navbar {
+  background: #fff;
+  padding: 1em;
+  display: flex;
+  width: 100%;
+  height: 48px;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  z-index: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.questions_layout_btn_sm {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.8;  
+}
+
+.questions_layout_btn_sm span {
+  margin-left: 10px;
+}
+
+.questions_layout_btn_lg {
+  width: 270px;
+  height: 48px;
+  background: var(--secondary-color);
+  border-radius: 24px; 
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.radio_form {
+  margin-top: 30px;
+  padding: .5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.radio_option {
+  height: 38px;
+  margin-bottom: 12px;  
+  margin-right: 8px;
+}
+
+.radio_option input {
+  opacity: 0;
+  position: absolute;
+  top: -50px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  left: -100px;
+}
+
+.radio_input {
+  border-radius: 24px;
+  height: 100%;
+  border: 1px solid #978F8F;
+  padding: 10px 22px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000; 
+  opacity: 0.7;
+}
+
+.radio_option input:checked + .radio_input {
+  border: 1px solid var(--crimson-color);
+  color: var(--crimson-color);
+}
+
+.symptoms {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.symptoms_search {
+  width: 327px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #E9ECEF;
+  border-radius: 20px;
+  padding: 0 1em;
+}
+
+.symptoms_search svg {
+  width: 20px;
+  height: 20px;
+  margin-left: 17px;
+}
+
+.symptoms_search input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.symptoms_search input::placeholder {
+  font-size: 0.88rem;
+  color: #6C767E;
+}
+
+.symptoms_board {
+  width: 326px;
+  max-height: 150px;  
+  padding: 1em;
+  background: #FFFFFF;
+  border-radius: 10px;  
+  overflow-y: scroll;
+  filter: drop-shadow(6px 16px 16px rgba(0, 0, 0, 0.1));  
+}
+
+.symptoms_board_text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.67px;
+  color: #000000;
+  opacity: 0.7;  
+  margin-bottom: 16px;
+}
+
+.selected_symptoms {
+  padding: 1em;
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.selected_symptom {
+  width: auto;
+  height: 32px;
+  background: var(--crimson-color);
+  color: #fff;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;  
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;  
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 0 12px;
+}
+
+.selected_symptom button {
+  width: 18px;
+  height: 18px;
+  background: none;
+  border: none;
+  outline: none;
+  margin-left: 4px;
+}
+
+.analysing_results {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.analysing_results_statusbar {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.analysing_results h2 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.67px;
+  color: #000000;
+  opacity: 0.8;  
+  margin-top: 20px;
+}
+
+.analysing_results_roller {
+  width: 151px;
+  height: 151px;  
+  -webkit-animation: spin 3000ms linear infinite;
+  -moz-animation: spin 3000ms linear infinite;
+  -ms-animation: spin 3000ms linear infinite;
+  animation: spin 3000ms linear infinite;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+@-ms-keyframes spin {
+  from { -ms-transform: rotate(0deg); }
+  to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+
+
+.result {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result_statusbar {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.result h2 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.67px;
+  color: #000000;
+  opacity: 0.8;  
+  margin-top: 20px;
+}
+
+.result p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.67px;
+  color: #000000; 
+  opacity: 0.4;  
+  margin-bottom: 15px;
+}
+
+.result_illustration {
+  margin-bottom: 14px;
+  width: 183px;
+}
+
+.result_btn {
+  width: 281px;
+  height: 48px;
+  background: var(--secondary-color);
+  color: #fff;  
+  border-radius: 24px;
+  margin-top: 24px;
+}
+
+.result_btn a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;  
+}

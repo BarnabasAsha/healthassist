@@ -1,0 +1,313 @@
+.hospitals {
+  width: 100%;
+}
+
+.hospitals_list {
+  margin-top: 100px;
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hospital_header {
+  position: fixed;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  padding: .3em 1em 1.2em 1em;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 20px 20px;
+}
+
+.hospital_header_status {
+  width: 100%;
+  height: 38px;
+  margin-bottom: 10px;
+}
+
+.hospital_header_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hospital_header_text_heading {
+  display: flex;
+  align-items: center;
+}
+
+.hospital_header_text h1 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.67px;
+  color: #000000;
+  opacity: 0.8;  
+  margin-left: 11px;
+}
+
+.hospital {
+  width: 100%;
+  max-width: 343px;
+  height: 175px;
+  background: #FFFEFE;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;  
+  margin-bottom: 16px;  
+  padding: 14px;
+}
+
+.hospital_top {
+  display: flex;
+  align-items: center;
+}
+
+.hospital_img {
+  width: 74px;
+  height: 81px;
+  border-radius: 8px;    
+  margin-right: 12px;
+  overflow: hidden;
+}
+
+.hospital_info h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.8);
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.hospital_info h2 span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: #6C767E;
+  opacity: 0.6;  
+}
+
+.hospital_info_phone {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #B3B2B2;  
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.hospital_info_phone svg {
+  width: 8px;
+  margin-right: 4px;
+}
+
+.hospital_info_address {
+  display: flex;
+  align-items: flex-start;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #B3B2B2;  
+}
+
+.hospital_info_address svg {
+  width: 8px;
+  margin-right: 4px;
+}
+
+.hospital_bottom {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hospital_bottom_btn {
+  width: 147px;
+  height: 32px;
+  border-radius: 32px;  
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+
+.hospital_bottom_btn.grey {
+  color: #000000;
+  background: #E9E9E9;
+  margin-right: 16px;
+}
+
+.hospital_bottom_btn.main {
+  color: #fff;
+  background: var(--secondary-color);
+}
+
+.address {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 600;
+  width: 100%;
+  height: 100vh;
+  background: #D7D7D7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.address_details {
+  padding: 1.5em 1em;
+  width: 100%;
+  background: #fff;
+  box-shadow: 42px 2px 64px rgba(0, 0, 0, 0.15); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.address_details_top {
+  margin-bottom: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.address_details_top h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.67px;
+  color: #000000;
+  opacity: 0.8;  
+}
+
+.address_details_option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  width: 327px;
+  height: 57px;
+  background: #FFFEFE;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  margin-bottom: 16px;    
+}
+
+.address_action {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.address_details_input {
+  display: flex;
+  align-items: center;
+}
+
+.address_details_input input {
+ position: absolute;
+ top: -50px;
+ width: 0;
+ height: 0;
+ overflow: hidden;
+ opacity: 0;
+}
+
+
+.address_details_input input:checked + label .address_details_input_radio .inner {
+  display: block;
+}
+
+.address_details_input label {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.address_details_input label span {
+  opacity: 0.5;
+}
+
+.address_details_input_radio {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;  
+  opacity: 0.9;
+  border: 3px solid #D7D7D7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+}
+
+.address_details_input_radio .inner {
+  width: 10px;
+  height: 10px;  
+  background: var(--secondary-color);
+  border-radius: 50%;
+  display: none;
+}
+
+.address_shape {
+  width: 70px;
+  height: 5px;
+  background: #000000;
+  opacity: 0.1;
+  border-radius: 10px;
+  margin-top: 8px;
+  margin-bottom: 24px;  
+}
+
+.address_add {
+  background: none;
+  border: none;
+  color: var(--crimson-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.67px;
+  color: #EB6657;
+  opacity: 0.8;
+}
+
+.address_proceed {
+  width: 327px;
+  height: 48px;
+  border-radius: 24px;
+  background: var(--secondary-color);
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;    
+  margin-top: 33px;
+}
