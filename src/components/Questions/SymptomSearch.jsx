@@ -78,7 +78,7 @@ const SymptomSearch = () => {
   return (
     <div className="symptoms">
       <div className="symptoms_search">
-        <input type="text" name="search" id="search" onChange={runQuery} placeholder="Type disease here" />
+        <input type="text" name="search" id="search" onChange={runQuery} onBlur={runQuery} placeholder="Type disease here" />
         <div className="symptoms_search_icon">
           <SearchIcon />
         </div>
